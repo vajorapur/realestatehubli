@@ -19,9 +19,8 @@ button,label,input{touch-action:manipulation;-webkit-tap-highlight-color:rgba(30
 body{background:var(--paper);color:var(--ink);font-family:'Inter Tight',system-ui,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;text-align:center}
 .kn{font-family:'Noto Sans Kannada','Inter Tight',sans-serif}
 .wrap{max-width:1000px;margin:0 auto;padding:0 22px}
-.wordmark{font-family:'Fraunces',serif;font-weight:900;line-height:1.04;letter-spacing:-.03em;font-size:clamp(18px,6.9vw,72px);color:var(--ink);white-space:nowrap}
-@media (min-width:640px){.wordmark{font-size:min(8.4vw,108px)}
-.sheet .wordmark{font-size:min(8vw,74px)}}
+.wrap,.sheet{container-type:inline-size}
+.wordmark{font-family:'Fraunces',serif;font-weight:900;font-variation-settings:'opsz' 144;line-height:1.05;letter-spacing:-.03em;font-size:10.3cqw;color:var(--ink);white-space:nowrap;text-align:center}
 .wordmark .g,.wordmark .d{color:var(--green)}
 .hero{padding:54px 0 46px;background:linear-gradient(#fff,var(--wash))}
 .hero .wordmark{margin-bottom:26px}
