@@ -28,6 +28,7 @@ body{background:var(--paper);color:var(--ink);font-family:'Inter Tight',system-u
 .hero p.sub{margin:18px auto 0;max-width:40ch;color:var(--ink);font-size:clamp(19px,3.4vw,26px);line-height:1.5;font-weight:500}
 .hero p.sub .kn{display:block;margin-top:12px;color:var(--green-deep);font-size:clamp(19px,3.4vw,26px);font-weight:600;line-height:1.5}
 .choose{margin-top:44px}
+.choose.hide{display:none}
 .choose-lead{font-size:15px;color:var(--muted);margin-bottom:14px;letter-spacing:.02em;text-transform:uppercase}
 .tiles{display:flex;flex-direction:column;gap:14px;max-width:560px;margin:0 auto}
 .tile{appearance:none;border:1.5px solid var(--rule);background:#fff;color:var(--ink);border-radius:16px;padding:20px 22px;cursor:pointer;display:flex;align-items:center;gap:18px;transition:border-color .16s,box-shadow .16s,transform .12s}
@@ -43,6 +44,8 @@ body{background:var(--paper);color:var(--ink);font-family:'Inter Tight',system-u
 .tile.on .chev{opacity:.9}
 .hero-foot{padding:34px 0 4px;font-size:14.5px;color:var(--muted)}
 .panel{background:var(--wash);padding:50px 0 70px;border-top:1px solid var(--rule)}
+.panel.flow-start{min-height:calc(100vh - 24px);display:flex;align-items:center}
+.panel.flow-start .sheet{width:100%}
 .sheet{background:#fff;border:1px solid var(--rule);border-radius:20px;padding:clamp(22px,4vw,40px);max-width:720px;margin:0 auto;box-shadow:0 12px 40px rgba(14,30,21,.05)}
 .sheet .wordmark{padding-bottom:22px;margin-bottom:26px;border-bottom:1px solid var(--rule)}
 .stepper{display:flex;align-items:flex-start;justify-content:center;margin-bottom:30px}
@@ -113,7 +116,7 @@ footer{padding:30px 0;font-size:14px;color:var(--muted);background:var(--wash);b
 <section class="hero">
   <div class="wrap">
         <div class="wordmark">www.realestate<span class="g">hubli</span><span class="d">.in</span></div>
-            <div class="choose">
+            <div class="choose" id="choose">
       <p class="choose-lead">I want to</p>
       <div class="tiles" role="group" aria-label="What do you want to do">
         <button class="tile" type="button" data-intent="Buy"><b>Buy</b><span class="div"></span><i class="kn">ಖರೀದಿ ಮಾಡಿ</i><span class="chev">›</span></button>
@@ -268,6 +271,8 @@ document.querySelectorAll(".tile").forEach(b=>{b.addEventListener("click",()=>{
   document.querySelectorAll(".tile").forEach(x=>x.classList.remove("on"));b.classList.add("on");
   intent=b.dataset.intent;
   renderSections(intent);
+  $("choose").classList.add("hide");
+  $("form").classList.add("flow-start");
   $("photoBlock").classList.toggle("hide",intent==="Buy");
   goStep(1);$("stepper").scrollIntoView({behavior:"smooth"});if(matchMedia("(hover:hover)").matches)setTimeout(()=>$("name").focus(),400);});});
 
@@ -282,9 +287,9 @@ $("to2").addEventListener("click",()=>{const n=$("name").value.trim(),p=$("phone
   if(!n)return fail($("e1"),"Enter your name so we know who to ask for.");
   if(p.length!==10)return fail($("e1"),"Enter a 10-digit mobile number.");
   if(e&&!/^\S+@\S+\.\S+$/.test(e))return fail($("e1"),"That email does not look right. Leave it blank if you prefer.");
-  if(!intent){intent="Buy";document.querySelector('[data-intent="Buy"]').classList.add("on");renderSections("Buy");$("photoBlock").classList.add("hide");}
+  if(!intent){return fail($("e1"),"Choose Buy, Sell or Rent above to continue.");}
   goStep(2);$("stepper").scrollIntoView({behavior:"smooth"});});
-$("back1").addEventListener("click",()=>goStep(1));
+$("back1").addEventListener("click",()=>{goStep(1);$("choose").classList.remove("hide");$("form").classList.remove("flow-start");window.scrollTo({top:0,behavior:"smooth"});});
 function picked(g){return [...document.querySelectorAll('input[name="'+g+'"]:checked')].map(i=>i.value);}
 
 $("send").addEventListener("click",()=>{clr($("e2"));
@@ -301,7 +306,7 @@ $("send").addEventListener("click",()=>{clr($("e2"));
   $("waLink").href=url;window.open(url,"_blank");goStep(3);$("stepper").scrollIntoView({behavior:"smooth"});});
 $("restart").addEventListener("click",()=>{["name","phone","email","area"].forEach(i=>$(i).value="");
   $("dynamic").innerHTML="";$("photos").value="";intent="";document.querySelectorAll(".tile").forEach(x=>x.classList.remove("on"));
-  goStep(1);window.scrollTo({top:0,behavior:"smooth"});});
+  goStep(1);$("choose").classList.remove("hide");$("form").classList.remove("flow-start");window.scrollTo({top:0,behavior:"smooth"});});
 </script>
 </body>
 </html>
