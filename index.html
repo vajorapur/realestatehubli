@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#ffffff">
-<title>realestatehubli.com — Buy, Sell or Rent property in Hubli</title>
+<title>realestatehubli.in — Buy, Sell or Rent property in Hubli</title>
 <meta name="description" content="Sites, land, houses, apartments and shops in Hubli. Tell us what you need and our team calls you back.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -156,26 +156,34 @@ html[lang=kn] .theme-top h2{font-family:'Noto Sans Kannada',sans-serif;font-size
 .language-toggle{max-width:146px;padding:9px 30px 9px 12px}.language-toggle option{color:#17291f;background:#fff}.motion-toggle{right:auto;left:174px}.theme-toggle{right:auto;left:276px;bottom:16px}@media(max-width:700px){.language-toggle{left:12px;bottom:12px;max-width:132px}.motion-toggle{left:12px;bottom:52px}.theme-toggle{left:12px;bottom:90px}}
 html:not([lang=en]) body{font-family:system-ui,'Noto Sans Kannada',sans-serif}html:not([lang=en]) .cine-content h1,html:not([lang=en]) .editorial h2,html:not([lang=en]) .journey-heading h2,html:not([lang=en]) .film-caption h2,html:not([lang=en]) .contact-band h2,html:not([lang=en]) .agri-copy h2,html:not([lang=en]) .space-card h3{font-family:system-ui,'Noto Sans Kannada',sans-serif;letter-spacing:0;line-height:1.42}
 elevenlabs-convai{--el-overlay-padding:18px}
-.voice-agent-launch{position:fixed;right:18px;bottom:18px;z-index:1101;width:58px;height:58px;display:grid;place-items:center;padding:0;border:1px solid #efd79f;border-radius:50%;background:#c9af78;color:#101511;box-shadow:0 12px 35px #0008;cursor:pointer;transition:transform .25s,background .25s}.voice-agent-launch:hover{background:#efd79f;transform:translateY(-3px)}.voice-agent-launch:focus-visible{outline:3px solid #fff;outline-offset:4px}.voice-agent-launch[hidden]{display:none}.voice-agent-launch svg{width:25px;height:25px;fill:currentColor}@media(max-width:700px){.voice-agent-launch{right:12px;bottom:12px;width:54px;height:54px}}
+.voice-agent-launch{position:fixed;right:18px;bottom:18px;z-index:1101;min-height:58px;display:flex;align-items:center;gap:10px;padding:10px 18px 10px 15px;border:1px solid #efd79f;border-radius:999px;background:#c9af78;color:#101511;box-shadow:0 12px 35px #0008;cursor:pointer;font:800 13px/1.15 Inter,system-ui,sans-serif;letter-spacing:.01em;transition:transform .25s,background .25s}.voice-agent-launch:hover{background:#efd79f;transform:translateY(-3px)}.voice-agent-launch:focus-visible{outline:3px solid #fff;outline-offset:4px}.voice-agent-launch[hidden]{display:none}.voice-agent-launch svg{width:25px;height:25px;flex:0 0 25px;fill:currentColor}.voice-agent-launch span{max-width:145px;text-align:left}@media(max-width:700px){.voice-agent-launch{right:12px;bottom:12px;min-height:54px;padding:9px 14px 9px 12px;font-size:12px}.voice-agent-launch span{max-width:116px}}
+/* Client-requested option layout and stronger brand visibility */
+.tiles{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.tile{padding:25px}
+.tile b{font-size:clamp(38px,4vw,54px)}
+.tile:nth-child(4){transition-delay:.3s}
+@media(max-width:900px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.cine-nav .cine-brand{font-size:clamp(22px,6vw,28px);font-weight:800}.tiles{grid-template-columns:1fr}.tile b{font-size:46px}}
 </style>
 </head>
 <body><button class="theme-toggle" id="openTheme" type="button" aria-haspopup="dialog" aria-controls="themeDialog">Colours ◐</button>
-<dialog id="themeDialog" aria-labelledby="themeTitle"><div class="theme-top"><h2 id="themeTitle">Choose your colours</h2><button type="button" class="theme-close" id="closeTheme" aria-label="Close colour options">×</button></div><p class="theme-help">Optional. Choose a look you prefer. Form text stays dark and readable.</p><div class="theme-grid"><button class="theme-choice" type="button" data-theme="gold" aria-pressed="true"><i style="--swatch:#c9ad74;--swatch-bg:#111412"></i><span>Classic gold</span><b aria-hidden="true">✓</b></button><button class="theme-choice" type="button" data-theme="emerald" aria-pressed="false"><i style="--swatch:#a8d6b4;--swatch-bg:#0b2019"></i><span>Forest green</span><b aria-hidden="true">✓</b></button><button class="theme-choice" type="button" data-theme="blue" aria-pressed="false"><i style="--swatch:#adc9ef;--swatch-bg:#101e33"></i><span>Midnight blue</span><b aria-hidden="true">✓</b></button><button class="theme-choice" type="button" data-theme="ivory" aria-pressed="false"><i style="--swatch:#63502c;--swatch-bg:#f7f3e8"></i><span>Light ivory</span><b aria-hidden="true">✓</b></button></div><p class="theme-saved" role="status">Your choice is saved on this browser.</p><button class="theme-reset" id="resetTheme" type="button">Restore default colours</button></dialog><select class="language-toggle" aria-label="Choose website language"><option value="en">English</option><option value="kn">ಕನ್ನಡ</option><option value="hi">हिन्दी</option><option value="ta">தமிழ்</option><option value="te">తెలుగు</option><option value="ml">മലയാളം</option><option value="gu">ગુજરાતી</option><option value="mr">मराठी</option><option value="bn">বাংলা</option><option value="pa">ਪੰਜਾਬੀ</option><option value="ur">اردو</option><option value="or">ଓଡ଼ିଆ</option><option value="as">অসমীয়া</option></select><button class="motion-toggle" type="button" aria-pressed="true">Motion: on</button><div class="progress" aria-hidden="true"></div><nav class="cine-nav"><a class="cine-brand" href="#">www.realestatehubli.com<small>Hubli–Dharwad · Karnataka</small></a><div class="cine-links"><a href="#story">Discover</a><a href="#landing">Buy · Sell · Rent</a><a href="tel:+919591695667">Let’s talk ↗</a></div></nav>
-<div class="presentation"><section class="cinematic"><img class="cine-photo" src="assets/architecture-licensed.jpg" alt="Architectural inspiration: modern home with a landscaped garden" fetchpriority="high"><div class="cine-content"><span class="eyebrow">All properties. One place.</span><h1><span class="line"><span>A new address.</span></span><span class="line"><em>A new beginning.</em></span></h1><p>Buy, sell or rent in Hubli–Dharwad.<br>Your next chapter starts with the right place.</p><a class="cine-btn" href="#landing">Find your direction <span>↗</span></a></div><div class="cine-bottom"><span>Scroll to discover <i class="scroll-line"></i> ↓</span><span>Rooted in Hubli.<br>Built around you.</span></div></section>
+<dialog id="themeDialog" aria-labelledby="themeTitle"><div class="theme-top"><h2 id="themeTitle">Choose your colours</h2><button type="button" class="theme-close" id="closeTheme" aria-label="Close colour options">×</button></div><p class="theme-help">Optional. Choose a look you prefer. Form text stays dark and readable.</p><div class="theme-grid"><button class="theme-choice" type="button" data-theme="gold" aria-pressed="true"><i style="--swatch:#c9ad74;--swatch-bg:#111412"></i><span>Classic gold</span><b aria-hidden="true">✓</b></button><button class="theme-choice" type="button" data-theme="emerald" aria-pressed="false"><i style="--swatch:#a8d6b4;--swatch-bg:#0b2019"></i><span>Forest green</span><b aria-hidden="true">✓</b></button><button class="theme-choice" type="button" data-theme="blue" aria-pressed="false"><i style="--swatch:#adc9ef;--swatch-bg:#101e33"></i><span>Midnight blue</span><b aria-hidden="true">✓</b></button><button class="theme-choice" type="button" data-theme="ivory" aria-pressed="false"><i style="--swatch:#63502c;--swatch-bg:#f7f3e8"></i><span>Light ivory</span><b aria-hidden="true">✓</b></button></div><p class="theme-saved" role="status">Your choice is saved on this browser.</p><button class="theme-reset" id="resetTheme" type="button">Restore default colours</button></dialog><select class="language-toggle" aria-label="Choose website language"><option value="en">English</option><option value="kn">ಕನ್ನಡ</option><option value="hi">हिन्दी</option><option value="ta">தமிழ்</option><option value="te">తెలుగు</option><option value="ml">മലയാളം</option><option value="gu">ગુજરાતી</option><option value="mr">मराठी</option><option value="bn">বাংলা</option><option value="pa">ਪੰਜਾਬੀ</option><option value="ur">اردو</option><option value="or">ଓଡ଼ିଆ</option><option value="as">অসমীয়া</option></select><button class="motion-toggle" type="button" aria-pressed="true">Motion: on</button><div class="progress" aria-hidden="true"></div><nav class="cine-nav"><a class="cine-brand" href="#">www.realestatehubli.in<small>Hubli–Dharwad · Karnataka</small></a><div class="cine-links"><a href="#story">Discover</a><a href="#landing">Buy · Sell · Rent · Farm Land</a><a href="tel:+919591695667">Call an agent ↗</a></div></nav>
+<div class="presentation"><section class="cinematic"><img class="cine-photo" src="assets/architecture-licensed.jpg" alt="Modern home in Hubli" fetchpriority="high"><div class="cine-content"><span class="eyebrow">All properties. One place.</span><h1><span class="line"><span>Buy. Sell. Rent.</span></span><span class="line"><em>Made simple.</em></span></h1><p>Find a house, site, shop or farm land in Hubli–Dharwad.<br>Tell us what you need.</p><a class="cine-btn" href="#landing">Find your direction <span>↗</span></a></div><div class="cine-bottom"><span>Scroll to see options <i class="scroll-line"></i> ↓</span><span>Hubli–Dharwad<br>Property help.</span></div></section>
 <section class="editorial" id="story"><span class="eyebrow reveal">01 / A sense of place</span><div class="reveal"><h2>More than a property.<br>A place for what’s next.</h2><p>From residential and commercial sites to agricultural land, independent houses, apartments and shops. Start with what you need, and tell us where you want to be.</p></div></section>
-<section class="film-scroll"><div class="film-frame"><img class="film-alt" src="assets/architecture-licensed.jpg" alt="Architectural inspiration: modern home exterior" loading="lazy"><img class="film-primary" src="assets/interior-licensed.jpg" alt="Architectural inspiration: a spacious contemporary interior" loading="lazy"><span class="film-label">Explore the possibilities / Hubli–Dharwad</span><div class="film-caption"><div class="film-count">01 — SPACE TO LIVE</div><h2>Room for<br>your next chapter.</h2><p>Independent houses. Apartments. Residential sites.</p></div><div class="film-track"><span></span></div><span class="image-note">Architectural inspiration · Not a property listing</span></div></section>
-<section class="editorial"><span class="eyebrow reveal">02 / Make your move</span><div class="reveal"><h2>Your plans.<br>Your property journey.</h2><p>Choose Buy, Sell or Rent below. Share your requirements through our guided form, then continue the conversation with our team on WhatsApp.</p><p class="kn">ಖರೀದಿ ಮಾಡಿ · ಮಾರಾಟ ಮಾಡಿ · ಬಾಡಿಗೆ ಬೇಕು / ಬಾಡಿಗೆಗೆ ನೀಡಿ</p></div></section></div>
+<section class="film-scroll"><div class="film-frame"><img class="film-alt" src="assets/architecture-licensed.jpg" alt="Modern home exterior" loading="lazy"><img class="film-primary" src="assets/agriculture.jpg" alt="Farm land near Hubli" loading="lazy"><span class="film-label">Homes, sites and farm land / Hubli–Dharwad</span><div class="film-caption"><div class="film-count">01 — PROPERTY OPTIONS</div><h2>Homes, sites<br>and farm land.</h2><p>Houses · Apartments · Sites · Shops · Farm land</p></div><div class="film-track"><span></span></div><span class="image-note">Example photographs · Contact us for available properties</span></div></section>
+<section class="editorial"><span class="eyebrow reveal">02 / Choose what you need</span><div class="reveal"><h2>Buy, sell, rent<br>or find farm land.</h2><p>Choose an option below. Fill in your details. Our real estate agent will contact you.</p><p class="kn">ಖರೀದಿ · ಮಾರಾಟ · ಬಾಡಿಗೆ · ಕೃಷಿ ಭೂಮಿ</p></div></section></div>
 
-<div class="kinetic presentation" aria-hidden="true"><div>BUY · SELL · RENT · HUBLI–DHARWAD · BUY · SELL · RENT · HUBLI–DHARWAD · </div></div>
+<div class="kinetic presentation" aria-hidden="true"><div>BUY · SELL · RENT · FARM LAND · HUBLI–DHARWAD · BUY · SELL · RENT · FARM LAND · </div></div>
 <section class="journey presentation"><div class="journey-pin"><div class="journey-heading"><span class="eyebrow">03 / Explore your possibilities</span><h2>Different spaces.<br><em>One destination.</em></h2><span class="journey-hint">Keep scrolling to explore →</span></div><div class="journey-window"><div class="journey-track"><article class="space-card"><img src="assets/architecture-licensed.jpg" alt="Illustrative residential architecture" loading="lazy"><div><span>01 / RESIDENTIAL</span><h3>A place to call home.</h3><p>Independent houses · Apartments · Residential sites</p><a href="#landing">Explore your options ↗</a></div></article><article class="space-card"><img src="assets/interior-licensed.jpg" alt="Illustrative interior design" loading="lazy"><div><span>02 / COMMERCIAL</span><h3>Make room for ambition.</h3><p>Commercial sites · Shops</p><a href="#landing">Share your requirements ↗</a></div></article><article class="space-card"><img src="assets/agriculture.jpg" alt="Illustrative aerial view of agricultural fields" loading="lazy"><div><span>03 / LAND</span><h3>Ground for your future.</h3><p>Agriculture and NA land</p><a href="#landing">Start a conversation ↗</a></div></article></div></div><p class="journey-note">Illustrative architecture and farmland · Not available property listings.</p></div></section><section class="hero" id="landing">
   <div class="wrap">
-        <div class="wordmark">www.realestate<span class="g">hubli</span><span class="d">.com</span></div>
+        <div class="wordmark">www.realestate<span class="g">hubli</span><span class="d">.in</span></div>
             <div class="choose">
       <p class="choose-lead">I want to</p>
       <div class="tiles" role="group" aria-label="What do you want to do">
         <button class="tile" type="button" data-intent="Buy"><b>Buy</b><span class="div"></span><i class="kn">ಖರೀದಿ ಮಾಡಿ</i><span class="chev">›</span></button>
         <button class="tile" type="button" data-intent="Sell"><b>Sell</b><span class="div"></span><i class="kn">ಮಾರಾಟ ಮಾಡಿ</i><span class="chev">›</span></button>
         <button class="tile" type="button" data-intent="Rent"><b>Rent</b><span class="div"></span><i class="kn">ಬಾಡಿಗೆ ಬೇಕು / ಬಾಡಿಗೆಗೆ ನೀಡಿ</i><span class="chev">›</span></button>
+        <button class="tile" type="button" data-intent="Farm Land"><b>Farm Land</b><span class="div"></span><i class="kn">ಕೃಷಿ ಭೂಮಿ</i><span class="chev">›</span></button>
       </div>
     </div>
     <p class="hero-foot">Residential &amp; commercial sites · Agriculture and NA land · Independent houses · Apartments · Shops</p>
@@ -184,7 +192,7 @@ elevenlabs-convai{--el-overlay-padding:18px}
 
 <section class="panel hide" id="form">
   <div class="sheet">
-    <div class="wordmark">www.realestate<span class="g">hubli</span><span class="d">.com</span></div>
+    <div class="wordmark">www.realestate<span class="g">hubli</span><span class="d">.in</span></div>
     <div class="stepper" id="stepper">
       <div class="st on" data-s="1"><span class="dot">1</span><em>1.<br>Your details</em></div>
       <div class="stbar" data-b="1"></div>
@@ -202,7 +210,7 @@ elevenlabs-convai{--el-overlay-padding:18px}
       </div>
       <label class="f"><span>Email ID (optional)</span><input type="email" id="email" placeholder="name@email.com" autocomplete="email" enterkeyhint="done"></label>
       <p class="err" id="e1"></p>
-      <div class="actions"><button class="btn" type="button" id="to2">Continue <span class="arw">→</span></button><button class="btn ghost" type="button" id="changeIntent">Back to Buy / Sell / Rent</button></div>
+      <div class="actions"><button class="btn" type="button" id="to2">Continue <span class="arw">→</span></button><button class="btn ghost" type="button" id="changeIntent">Back to property options</button></div>
     </div>
 
     <div id="s2" class="hide">
@@ -239,7 +247,7 @@ elevenlabs-convai{--el-overlay-padding:18px}
 </section>
 
 <section class="agri-section presentation"><div class="agri-photo-wrap"><img src="assets/agriculture.jpg" alt="Illustrative green agricultural fields" loading="lazy"></div><div class="agri-copy reveal"><span class="eyebrow">AGRICULTURE &amp; LAND</span><h2>Land for<br>your next chapter.</h2><p>Looking to buy or sell agricultural land? Share your preferred location and requirements with our team.</p><a class="cine-btn" href="#landing">Explore agricultural land <span>↗</span></a><small>Illustrative farmland photograph · Not a property listing</small></div></section><section class="contact-band presentation"><div><span class="eyebrow">Let’s start a conversation</span><h2>The right place begins<br>with the right conversation.</h2></div><a class="cine-btn" href="tel:+919591695667">Call 95916 95667 ↗</a></section><section class="strip"><div class="wrap"><div class="wordmark">www.realestate<span class="g">hubli</span><span class="d">.com</span></div></div></section>
-<footer><div class="wrap">www.realestatehubli.com · All Properties, One Place · Hubli–Dharwad, Karnataka</div><div class="photo-credits"><a href="https://unsplash.com/photos/7qD-iDyrdHY" target="_blank" rel="noopener">Architecture: Justin Wolff</a> · <a href="https://unsplash.com/photos/XyGvEj587Mc" target="_blank" rel="noopener">Interior: Francesca Tosolini</a> · <a href="https://unsplash.com/photos/CfuSQR2HVMY" target="_blank" rel="noopener">Farmland: Jason Dent</a> / Unsplash</div></footer>
+<footer><div class="wrap">www.realestatehubli.in · All Properties, One Place · Hubli–Dharwad, Karnataka</div><div class="photo-credits"><a href="https://unsplash.com/photos/7qD-iDyrdHY" target="_blank" rel="noopener">Architecture: Justin Wolff</a> · <a href="https://unsplash.com/photos/XyGvEj587Mc" target="_blank" rel="noopener">Interior: Francesca Tosolini</a> · <a href="https://unsplash.com/photos/CfuSQR2HVMY" target="_blank" rel="noopener">Farmland: Jason Dent</a> / Unsplash</div></footer>
 
 <script>
 const OWNER_WHATSAPP = "919591695667";
@@ -305,6 +313,14 @@ const CONFIG={
    {key:"Food preference",group:"food",icon:"leaf",multi:false,opts:FOOD},
    {key:"Tenant type",group:"tenant",icon:"users",multi:false,opts:TENANT},
    {key:"Monthly rent budget",group:"budget",icon:"wallet",multi:false,opts:RENT_BUDGET}
+ ],
+ "Farm Land":[
+   {key:"Land type",group:"ptype",icon:"tree",multi:true,opts:[
+     {v:"Agriculture land",l:"Agriculture land",i:"tree"},
+     {v:"NA land",l:"NA land",i:"plot"}
+   ]},
+   {key:"Land size",group:"size",icon:"plot",multi:true,opts:SIZES},
+   {key:"Budget",group:"budget",icon:"wallet",multi:false,opts:PRICE}
  ]
 };
 
@@ -313,8 +329,8 @@ const $=id=>document.getElementById(id);
 
 function renderSections(intent){
   const secs=CONFIG[intent];
-  const heading={Buy:"What would you like to buy?",Sell:"Tell us about the property you want to sell",Rent:"What would you like to rent?"};
-  const hint={Buy:"Only buyer requirements are shown below.",Sell:"Only seller/property-owner details are shown below.",Rent:"Only rental requirements are shown below."};
+  const heading={Buy:"What do you want to buy?",Sell:"What do you want to sell?",Rent:"What do you want to rent?","Farm Land":"What farm land do you need?"};
+  const hint={Buy:"Choose the property you need.",Sell:"Tell us about your property.",Rent:"Choose your rental requirement.","Farm Land":"Choose agriculture land or NA land."};
   $("intentHeading").textContent=heading[intent]||"Property details";
   $("intentHint").textContent=hint[intent]||"Tell us what you need.";
   $("dynamic").innerHTML=secs.map(sec=>{
@@ -353,7 +369,7 @@ function updateAreaLabel(){
   const label=document.querySelector('label[for="area"]');
   const span=$("areaLabel");
   if(!span)return;
-  span.textContent=intent==="Sell"?"Where is your property located in Hubli?":"Which area or locality in Hubli do you prefer?";
+  span.textContent=intent==="Sell"?"Where is your property located in Hubli?":intent==="Farm Land"?"Where should the farm land be located?":"Which area or locality in Hubli do you prefer?";
 }
 
 
@@ -380,7 +396,7 @@ $("to2").addEventListener("click",()=>{const n=$("name").value.trim(),p=$("phone
   if(!n)return fail($("e1"),"Enter your name so we know who to ask for.");
   if(p.length!==10)return fail($("e1"),"Enter a 10-digit mobile number.");
   if(e&&!/^\S+@\S+\.\S+$/.test(e))return fail($("e1"),"That email does not look right. Leave it blank if you prefer.");
-  if(!intent)return fail($("e1"),"Please choose Buy, Sell or Rent first.");
+  if(!intent)return fail($("e1"),"Please choose Buy, Sell, Rent or Farm Land first.");
   goStep(2);$("stepper").scrollIntoView({behavior:"smooth"});});
 $("back1").addEventListener("click",()=>goStep(1));
 $("changeIntent").addEventListener("click",()=>returnToLanding(false));
@@ -391,7 +407,7 @@ $("send").addEventListener("click",()=>{clr($("e2"));
   if(!picked("ptype").length)return fail($("e2"),"Select at least one property type.");
   if(!$("area").value.trim())return fail($("e2"),"Tell us the area or locality so we can match it.");
   const nP=$("photos").files?$("photos").files.length:0;
-  const lines=["NEW ENQUIRY - realestatehubli.com","","Name: "+$("name").value.trim(),"Mobile: "+$("phone").value.replace(/\D/g,""),"Email: "+($("email").value.trim()||"(not given)"),"","Wants to: "+intent.toUpperCase()];
+  const lines=["NEW ENQUIRY - realestatehubli.in","","Name: "+$("name").value.trim(),"Mobile: "+$("phone").value.replace(/\D/g,""),"Email: "+($("email").value.trim()||"(not given)"),"","Wants to: "+intent.toUpperCase()];
   CONFIG[intent].forEach(sec=>{const v=picked(sec.group);if(v.length)lines.push(sec.key+": "+v.join(", "));});
   lines.push("Area: "+$("area").value.trim());
   if(nP)lines.push("Photos: "+nP+" selected - customer will attach here");
@@ -401,7 +417,7 @@ $("send").addEventListener("click",()=>{clr($("e2"));
   $("waLink").href=url;window.open(url,"_blank");goStep(3);$("stepper").scrollIntoView({behavior:"smooth"});});
 $("restart").addEventListener("click",()=>returnToLanding(true));
 </script>
-<button class="voice-agent-launch" id="voiceAgentLaunch" type="button" aria-label="Talk to Namma Aasthi voice agent" title="Talk to Namma Aasthi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3Zm5-3a1 1 0 1 1 2 0 7 7 0 0 1-6 6.92V20h3a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2h3v-2.08A7 7 0 0 1 5 11a1 1 0 1 1 2 0 5 5 0 0 0 10 0Z"/></svg></button>
+<button class="voice-agent-launch" id="voiceAgentLaunch" type="button" aria-label="Talk to a Real Estate Agent" title="Talk to a Real Estate Agent"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3Zm5-3a1 1 0 1 1 2 0 7 7 0 0 1-6 6.92V20h3a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2h3v-2.08A7 7 0 0 1 5 11a1 1 0 1 1 2 0 5 5 0 0 0 10 0Z"/></svg><span>Talk to a Real Estate Agent</span></button>
 <elevenlabs-convai id="voiceAgentWidget" agent-id="agent_9801m59hy5zwedx8dw56nsyebqww"></elevenlabs-convai>
 <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
 <script>
